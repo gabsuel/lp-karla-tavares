@@ -1,0 +1,25 @@
+FOTOS DA DRA. KARLA TAVARES
+============================
+
+Coloque as fotos profissionais NESTA PASTA (assets) com exatamente estes nomes:
+
+1. karla-hero.jpg
+   - Foto principal (topo do site)
+   - Proporção vertical 4:5 (ex: 800 x 1000 pixels ou maior)
+   - Ideal: foto de corpo/meio corpo, fundo neutro ou escritório
+
+2. karla-sobre.jpg
+   - Foto da seção "Sobre a Advogada"
+   - Proporção vertical 4:5 (ex: 800 x 1000 pixels ou maior)
+   - Pode ser uma foto diferente da primeira (ex: sentada na mesa, ambiente de trabalho)
+
+3. og-image.jpg (opcional)
+   - Imagem que aparece quando o link do site é compartilhado no WhatsApp/redes sociais
+   - Proporção horizontal 1200 x 630 pixels
+
+IMPORTANTE:
+- Use exatamente os nomes acima (tudo minúsculo, sem espaços)
+- Assim que os arquivos forem colocados aqui, as fotos aparecem
+  automaticamente no site, sem precisar mexer em nada no código.
+- Enquanto não houver fotos, o site mostra um placeholder elegante
+  com o monograma "KT".
