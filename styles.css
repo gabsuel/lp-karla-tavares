@@ -351,7 +351,7 @@ i[class^="ph-"], i[class*=" ph-"] {
   align-items: center;
   background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 60%, #07487a 100%);
   color: var(--white);
-  padding: 160px 0 100px;
+  padding: 120px 0 90px;
   overflow: hidden;
 }
 
@@ -392,17 +392,25 @@ i[class^="ph-"], i[class*=" ph-"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 860px;
+  max-width: 900px;
+}
+
+/* Rótulo do hero em formato de pílula, para ancorar a hierarquia */
+.hero .eyebrow {
+  padding: 10px 22px;
+  border: 1px solid rgba(197, 165, 114, 0.35);
+  border-radius: 100px;
+  background: rgba(197, 165, 114, 0.06);
 }
 
 .hero__title {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(32px, 4.4vw, 52px);
-  line-height: 1.12;
+  font-size: clamp(36px, 5.2vw, 64px);
+  line-height: 1.1;
   letter-spacing: -0.005em;
   word-spacing: 0.12em;
-  margin-top: 28px;
+  margin-top: 32px;
 }
 .hero__title em {
   font-style: normal;
@@ -411,39 +419,25 @@ i[class^="ph-"], i[class*=" ph-"] {
 }
 
 .hero__sub {
-  margin-top: 26px;
-  font-size: 18px;
+  margin-top: 24px;
+  font-size: clamp(17px, 1.6vw, 19px);
   font-weight: 300;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.78);
-  max-width: 560px;
+  max-width: 600px;
 }
 
 .hero__actions {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 42px;
+  margin-top: 48px;
   flex-wrap: wrap;
 }
-
-.hero__badges {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  margin-top: 36px;
-  flex-wrap: wrap;
+.hero__actions .btn--lg {
+  padding: 20px 44px;
+  font-size: 17px;
 }
-.hero__badge {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-size: 13.5px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.72);
-}
-.hero__badge i { color: var(--gold); flex-shrink: 0; font-size: 20px; }
 
 /* Placeholder elegante enquanto não há foto */
 .photo-placeholder {
@@ -1352,18 +1346,21 @@ i[class^="ph-"], i[class*=" ph-"] {
   .header__cta { display: none; }
   .header__burger { display: flex; }
 
-  /* Hero ocupa a tela inteira do celular: infos > CTA > selos OAB */
+  /* Hero ocupa a tela inteira do celular: infos > CTA */
+  /* (padding inferior maior desloca o conteúdo para cima do centro) */
   .hero {
     min-height: 100vh;
     min-height: 100dvh;
-    padding: 100px 0 40px;
+    padding: 90px 0 140px;
   }
-  .hero__title { margin-top: 16px; }
-  .hero__sub { margin-top: 14px; font-size: 16px; }
-  .hero__actions { margin-top: 30px; width: 100%; }
+  .hero .eyebrow {
+    padding: 8px 18px;
+    font-size: 11.5px;
+  }
+  .hero__title { margin-top: 26px; }
+  .hero__sub { margin-top: 18px; font-size: 16.5px; }
+  .hero__actions { margin-top: 38px; width: 100%; }
   .hero__actions .btn { width: 100%; }
-  .hero__badges { margin-top: 24px; gap: 14px; }
-  .hero__badge { font-size: 12.5px; }
   .hero__scroll { display: none; }
 
   .strip__inner { flex-direction: column; align-items: flex-start; gap: 24px; }
@@ -1410,5 +1407,4 @@ i[class^="ph-"], i[class*=" ph-"] {
 @media (max-width: 420px) {
   .areas-grid { grid-template-columns: 1fr; }
   .dif-grid { grid-template-columns: 1fr; }
-  .hero__badges { gap: 16px; }
 }
